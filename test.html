@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type = "text/javascript">
+    function doIt(val) {
+    document.getElementById("theResult").innerHTML = val;
+    }
+    </script>
+
+    <input type = "text" id = "txt" onblur = "doIt(this.value)">
+    <br><br>
+   <p id="theResult"></p>
+  </body>
+</html>
