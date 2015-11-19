@@ -5,6 +5,7 @@
    <title>PSLE Quiz Challengers!</title>
    <script defer src="proj1.js"></script>
    <link rel="stylesheet" href="proj1.css">
+
  </head>
  <body>
    <audio controls>
@@ -13,84 +14,159 @@
    <body>
      <h1>Player 1 Quiz</h1>
      <h2>Multiple Choice Questions : Read the questions carefully and choose an answer out of the four (4) choices.</h2>
-     <script type="text/javaScript">
 
-     var qnbank = [[1, 'Qn 1.  What is the opposite of father?', 'A', 'Sister', 'B', 'Auntie', 'C', 'Mother', 'D', 'Molder', 'C'],
-     [2, 'Qn 2.  What is the opposite of mother?', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'B'],
-     [3, 'Qn 3', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'A'],
-     [4, 'Qn 4', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'B'],
-     [5, 'Qn 5', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'C'],
-     [6, 'Qn 6', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'D'],
-     [7, 'Qn 7', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'D'],
-     [8, 'Qn 8', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'B'],
-     [9, 'Qn 9', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'B'],
-     [10, 'Qn 10', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'A'],
-     [11, 'Qn 11', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'C'],
-     [12, 'Qn 12', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'B'],
-     [13, 'Qn 13', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'A'],
-     [14, 'Qn 14', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'B'],
-     [15, 'Qn 15', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'C'],
-     [16, 'Qn 16', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'C'],
-     [17, 'Qn 17', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'D'],
-     [18, 'Qn 18', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'D'],
-     [19, 'Qn 19', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'A'],
-     [20, 'Qn 20', 'A', 'XXXX', 'B', 'XXXX', 'C', 'XXXX', 'D', 'XXXX', 'A']]
+<script type="text/javascript">
 
-       // Create the array.
-       var Q1Q  = [sno, qn,];
-       var Q1A1 = [snoa, a11];
-       var Q1A2 = [snob, a12];
-       var Q1A3 = [snoc, a13];
-       var Q1A4 = [snod, a14];
-       var Qline = 0;
+var qnbnk = [{
+                sno: 1
+                question: "What is the opposite of father?",
+                options: ["Sister", "Auntie", "Mother", "Uncle"],
+                answer: 2
+              },
+              {
+                sno: 2
+                question: "What is 1 + 2 ?",
+                options: ["2", "3", "6", "12"],
+                answer: 1
+              },
+              {
+                sno: 3
+                question: "What is 2 + 3 ?",
+                options: ["2", "3", "6", "5"],
+                answer: 3
+              },
+              {
+                sno: 4
+                question: "What is 3 + 4 ?",
+                options: ["7", "3", "6", "12"],
+                answer: 0
+              },
+              {
+                sno: 5
+                question: "What is 4 + 5 ?",
+                options: ["9", "3", "6", "12"],
+                answer: 0
+              },
+              {
+                sno: 6
+                question: "What is 5 + 6 ?",
+                options: ["2", "3", "6", "11"],
+                answer: 3
+              },
+              {
+                sno: 7
+                question: "What is 6 + 7 ?",
+                options: ["2", "3", "13", "12"],
+                answer: 2
+              },
+              {
+                sno: 8
+                question: "What is 7 + 8 ?",
+                options: ["2", "15", "6", "12"],
+                answer: 1
+              },
+              {
+                sno: 9
+                question: "What is 8 + 9 ?",
+                options: ["2", "17", "6", "12"],
+                answer: 1
+              },
+              {
+                sno: 10
+                question: "What is 9 + 10 ?",
+                options: ["2", "3", "19", "12"],
+                answer: 2
+              },
+              {
+                sno: 11
+                question: "What is 10 + 11 ?",
+                options: ["2", "3", "21", "12"],
+                answer: 2
+              },
+              {
+                sno: 12
+                question: "What is 11 + 12 ?",
+                options: ["2", "23", "6", "12"],
+                answer: 1
+              },
+              {
+                sno: 13
+                question: "What is 12 + 13 ?",
+                options: ["25", "3", "6", "12"],
+                answer: 0
+              },
+              {
+                sno: 14
+                question: "What is 13 + 14 ?",
+                options: ["27", "3", "6", "12"],
+                answer: 0
+              },
+              {
+                sno: 15
+                question: "What is 14 + 15 ?",
+                options: ["2", "3", "29", "12"],
+                answer: 2
+              },
+              {
+                sno: 16
+                question: "What is 15 + 16 ?",
+                options: ["2", "31", "6", "12"],
+                answer: 1
+              },
+              {
+                sno: 17
+                question: "What is 16 + 17 ?",
+                options: ["33", "3", "6", "12"],
+                answer: 0
+              },
+              {
+                sno: 18
+                question: "What is 17 + 18 ?",
+                options: ["2", "3", "6", "35"],
+                answer: 3
+              },
+              {
+                sno: 19
+                question: "What is 18 + 19 ?",
+                options: ["2", "3", "6", "37"],
+                answer: 3
+              },
+              {
+                sno: 20
+                question: "What is 19 + 20 ?",
+                options: ["2", "39", "6", "12"],
+                answer: 1
+              }
+            ]
 
-while (Qline < 10) {
-
-  function giveBoxValue(val) {
-  document.getElementById("boxResult").innerHTML = val;}
-
-
-var sno = qnbank[Qline][0];
-var qn = qnbank[Qline][1];
-var snoa = qnbank[Qline][2];
-var a11 = qnbank[Qline][3];
-var snob = qnbank[Qline][4];
-var a12 = qnbank[Qline][5];
-var snoc = qnbank[Qline][6];
-var a13 = qnbank[Qline][7];
-var snod = qnbank[Qline][8];
-var a14 = qnbank[Qline][9];
-
-document.innerHTML="<DL>";
-document.write("<table border=0 width=550>");
-document.innerHTML="<tr>";
-document.write("<td width=100% align=left>");
-document.innerHTML="<DT>"
-document.write(qn);
-<p><br></p>
-document.write("<br/>");
-document.write(snoa,'. ', a11);
-document.write("<br>");
-document.write(snob,'. ', a12);
-document.write("<br>");
-document.write(snoc,'. ', a13);
-document.write("<br>");
-document.write(snod,'. ', a14);
-document.write("</td>");
-document.write("</tr>");
-document.write("</table>");
-document.write("</DL>");
-document.write("<tr>");
-document.write("<td width=100% align=right> Answer. ");
-document.write('<input type="text" name="textbox" size="1" maxlength="1" onblur = "giveBoxValue(this.value)">');
-document.write("<br>");
-document.write("<br>");
-Qline++;
+// Create the array.
+//   var Q1Q  = [sno, qn,];
+//   var Q1A1 = [snoa, a11];
+//   var Q1A2 = [snob, a12];
+//   var Q1A3 = [snoc, a13];
+//   var Q1A4 = [snod, a14];
+//   var Qline = 0;
+//
+// while (Qline < 10) {
+//
+// var sno = qnbank[Qline][0];
+// var qn = qnbank[Qline][1];
+// var snoa = qnbank[Qline][2];
+// var a11 = qnbank[Qline][3];
+// var snob = qnbank[Qline][4];
+// var a12 = qnbank[Qline][5];
+// var snoc = qnbank[Qline][6];
+// var a13 = qnbank[Qline][7];
+// var snod = qnbank[Qline][8];
+// var a14 = qnbank[Qline][9];
+// Qline++;
 }
 </script>
-<button onclick="getElementById('ruDone').innerHTML=Date()">Are you done with your answers? Click to see your SCORE!</button>
-<p id="ruDone"></p>
-<p id="boxResult"></p>
-
+<html>
+  <h1 id="header">DOM Header</h1>
+  <div id="paragraphs">
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+  </div>
 </body>
 </html>
