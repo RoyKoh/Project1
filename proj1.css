@@ -1,6 +1,9 @@
+/*define body style with a backgound picture background3.jpg covering whole webpage
+defining height, width, font-family and  color for text */
+
 body {
-      text-align: center;
-      background: url("file:///Users/kohchengchuan/wdi-sg-playground/project1/image/background3.jpeg");
+      text-align: left;
+      background: url("background3.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       height:100%;
@@ -8,4 +11,9 @@ body {
       color: white;
       font-family: helvetica;
     }
+
+/* defining .tab property to left margin indent */
+
 .tab { margin-left: 40px; }
+
+/* text in between are descriptive and will not impact css style syntax */

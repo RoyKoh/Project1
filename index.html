@@ -1,28 +1,35 @@
 <!DOCTYPE html>
+<!--// define html document //-->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>PSLE Quiz Challengers!</title>
-    <script defer src=""></script>
-    <link rel="stylesheet" href="">
-  </head>
-  <body>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '429366417260056',
-          xfbml      : true,
-          version    : 'v2.5'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-  </body>
+<!--// html open tag //-->
+ <head>
+<!--// head open tag //-->
+   <meta charset="utf-8">
+   <!--// define meta character set in HTML 5 //-->
+   <title>Elementary School Quiz Challengers!</title>
+   <!--// defining app title and will be shown at the top of browser on loading page //-->
+   <link rel="stylesheet" href="proj1.css">
+   <!--// link style sheet file ref proj1.css under the same folder where index.html is located //-->
+<script type="text/javascript" src="quiz_functions.js"></script>
+<!--// link to quiz_functions.js file in the same folder defined by src= //-->
+<script type="text/javascript" src="quiz_config.js"></script>
+<!--// link to quiz_config.js file in the same folder defined by src= //-->
+ </head>
+ <!--// head close tag //-->
+ <body>
+ <!--// body open tag //-->
+     <h1>Player 1 Quiz</h1>
+     <!--// header 1 title for Player 1 //-->
+     <h2>Multiple Choice Questions : Read the questions carefully and choose an answer out of the given two (2) to four (4) choices.</h2>
+     <!--// header 2 mcq instructions //-->
+     <script type="text/javaScript">
+     <!--// script open tag defining type javascript //-->
+       renderQuiz();
+       <!--// call renderQuiz() function which can be found through linked javascript file quiz_functions.js //-->
+     </script>
+     <!--// script close tag //-->
+</body>
+<!--// body close tag //-->
 </html>
+<!--// html close tag //-->
+<!--This is a comment. Comments are not displayed in the browser-->
