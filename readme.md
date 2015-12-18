@@ -88,3 +88,5 @@ Updated readme.md to proper template format for easy reference.
 *   lodash
 *   Travis CI
 *   Dragula
+
+...............................................................................................
