@@ -57,8 +57,13 @@ ISC
 
 ## WORK IN PROGRESS
 
+Project 1 (1 Page Front End)
 Completed One Page MCQ on 10 Dec 2015 pending review through GITHUB
 Updated readme.md to proper template format for easy reference.
+
+Project 2 (1 Page Back End)
+Removed and re-organized unnecessary files as per review (Zell)
+Refactor code and build on Project 1 to host data backend and use front end input to achieve the same result.
 
 
 ## COOL FEATURES TO INCORPORATE - INSPIRATION GAME 2048 @YONGJUN21
