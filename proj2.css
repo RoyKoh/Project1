@@ -3,7 +3,7 @@ defining height, width, font-family and  color for text */
 
 body {
       text-align: left;
-      background: url("background3.jpg");
+      background: url("image/background2.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       height:100%;
