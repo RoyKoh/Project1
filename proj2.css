@@ -1,6 +1,5 @@
 /*define body style with a backgound picture background3.jpg covering whole webpage
 defining height, width, font-family and  color for text */
-
 body {
       text-align: left;
       background: url("image/background2.jpg");
@@ -10,10 +9,19 @@ body {
       width:100%;
       color: white;
       font-family: helvetica;
-    }
+}
 
-/* defining .tab property to left margin indent */
-
-.tab { margin-left: 40px; }
 
 /* text in between are descriptive and will not impact css style syntax */
+
+div {
+color: yellow;
+}
+
+label {display:block;}
+.quiz {width:300px;}
+.quiz form {padding:3px;border:0px dashed #000;}
+.quiz p {padding:3px;border:0px solid #000;}
+.quiz p b {font:120% verdana;color:#006666;}
+.question {font:90% verdana;color:#006666;margin-bottom:15px;}
+.answers {font:75% verdana;}
