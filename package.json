@@ -19,6 +19,7 @@
   "homepage": "https://github.com/RoyKoh/Project1#readme",
   "dependencies": {
     "express": "^4.13.3",
-    "http-server": "^0.8.5"
+    "http-server": "^0.8.5",
+    "nodemon": "^1.8.1"
   }
 }
