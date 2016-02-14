@@ -1,11 +1,11 @@
 ## SYNOPSIS
 
-This game is my first project in General Assembly's Web Development Immersive Course. This is a quiz trivia style mcq, fill in the blanks, Q&A game APP for single or double players to pit their skills, possibly even online if can be done, the content materials are to be original from educators, for students to practise on using simple CSS and Javascript.
+This quiz is my first project in General Assembly's Web Development Immersive Course. This is a quiz trivia style mcq, fill in the blanks, Q&A APP for single player to pit their skills, possibly even online if can be done, the content materials are to be original from educators, for students to practise on using simple CSS and Javascript.
 
 
 ## GENERAL APP FEATURES
 
-Features AUTH0 login registration for single/double players, embedded midi/mp3, possibly weave some animations included.
+Features AUTH0 login registration for players, possibly weave some animations included.
 Parent Email & Mobile Communication. It currently runs on desktop web-browser, eventually to be on any desktop or mobile browser and supports both keyboard (arrow keys) and touchscreen (swipe) inputs.
 
 
@@ -60,10 +60,9 @@ ISC
 Project 1 (1 Page Front End)
 Completed One Page MCQ on 10 Dec 2015 pending review through GITHUB
 Updated readme.md to proper template format for easy reference.
-
-Project 2 (1 Page Back End)
 Removed and re-organized unnecessary files as per review (Zell)
-Refactor code and build on Project 1 to host data backend and use front end input to achieve the same result.
+Added Fill-In-The_blanks Page
+
 
 
 ## COOL FEATURES TO INCORPORATE - INSPIRATION GAME 2048 @YONGJUN21
