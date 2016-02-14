@@ -35,7 +35,9 @@
       newB.style.styleFloat = 'right'
       newB.style.cssFloat = 'right'
       newB.onclick = function () {
-        nextPage(qnum)
+      location.href = 'fitb.html'
+//  instead of returning the result page, direct to next html page quiz
+//        nextPage(qnum)
         return false
       }
       var newTb = document.createTextNode('Next >>')

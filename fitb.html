@@ -1,0 +1,105 @@
+<html><title> Improved Fill-In-Blank Quiz</title><head>
+<link rel="stylesheet" href="proj2.css">
+  <!--// link style sheet file ref proj2.css under the same folder where index.html is located //-->
+
+<style>
+
+input.ipxx, { background: yellow; color:red; }
+input.ipxa, { background: white; color:blue; }
+</style>
+
+<script LANGUAGE="JavaScript">
+function scoreme()
+{
+var total=10                // Total number of blanks in quiz
+var correct=total;          // Set number of correct to Total number in Quiz
+
+//  Get answer and response and convert to Upper case
+ sa01 = document.FXY1.NA01.value.toUpperCase(); sb01 = document.FXY1.NB01.value.toUpperCase();
+
+//  If Response is not correct then mark it (INCORRECT) and reduce correct reponse by 1
+ if(sa01!=sb01) { document.FXY1.NB01.value="INCORRECT!"; correct=correct-1;}
+
+// Repeat for each blank in quiz (notice the 01, 02, 03...10
+ sa02 = document.FXY1.NA02.value.toUpperCase(); sb02 = document.FXY1.NB02.value.toUpperCase();
+ if(sa02!=sb02) { document.FXY1.NB02.value="INCORRECT!"; correct=correct-1;}
+
+ sa03 = document.FXY1.NA03.value.toUpperCase(); sb03 = document.FXY1.NB03.value.toUpperCase();
+ if(sa03!=sb03) { document.FXY1.NB03.value="INCORRECT!"; correct=correct-1;}
+
+ sa04 = document.FXY1.NA04.value.toUpperCase(); sb04 = document.FXY1.NB04.value.toUpperCase();
+ if(sa04!=sb04) { document.FXY1.NB04.value="INCORRECT!"; correct=correct-1;}
+
+ sa05 = document.FXY1.NA05.value.toUpperCase(); sb05 = document.FXY1.NB05.value.toUpperCase();
+ if(sa05!=sb05) { document.FXY1.NB05.value="INCORRECT!"; correct=correct-1;}
+
+ sa06 = document.FXY1.NA06.value.toUpperCase(); sb06 = document.FXY1.NB06.value.toUpperCase();
+ if(sa06!=sb06) { document.FXY1.NB06.value="INCORRECT!"; correct=correct-1;}
+
+ sa07 = document.FXY1.NA07.value.toUpperCase(); sb07 = document.FXY1.NB07.value.toUpperCase();
+ if(sa07!=sb07) { document.FXY1.NB07.value="INCORRECT!"; correct=correct-1;}
+
+ sa08 = document.FXY1.NA08.value.toUpperCase(); sb08 = document.FXY1.NB08.value.toUpperCase();
+ if(sa08!=sb08) { document.FXY1.NB08.value="INCORRECT!"; correct=correct-1;}
+
+ sa09 = document.FXY1.NA09.value.toUpperCase(); sb09 = document.FXY1.NB09.value.toUpperCase();
+ if(sa09!=sb09) { document.FXY1.NB09.value="INCORRECT!"; correct=correct-1;}
+
+ sa10 = document.FXY1.NA10.value.toUpperCase(); sb10 = document.FXY1.NB10.value.toUpperCase();
+ if(sa10!=sb10) { document.FXY1.NB10.value="INCORRECT!"; correct=correct-1;}
+
+// Obtain number of correct and give number of correct out of total
+ document.FXY1.ovrXX.value="You got " + correct + " out of " + total + " correct.";
+
+-->
+}
+</script>
+
+
+</head><BODY><FONT face=arial>
+
+This is a sample Paragraph Text that will allow a person to have fill-in-blank self-check quizzes within
+a website. &nbsp;This is very good for instructors, who wish to step into the online environment.
+<BR><BR><hr>
+<FORM name=FXY1>
+
+This is a sample
+<INPUT value="Paragraph" name=NA01 type=hidden><INPUT class=ipxa value="ANSWER" name=NB01 type=text size=15>
+<INPUT value="Text" name=NA02 type=hidden><INPUT class=ipxa value="ANSWER" name=NB02 type=text size=15>
+
+that will allow a
+
+<INPUT value="person" name=NA03 type=hidden><INPUT class=ipxa value="ANSWER" name=NB03 type=text size=15>
+
+to have
+
+<INPUT value="fill-in-blank" name=NA04 type=hidden><INPUT class=ipxa value="ANSWER" name=NB04 type=text size=15>
+<INPUT value="self-check" name=NA05 type=hidden><INPUT class=ipxa value="ANSWER" name=NB05 type=text size=15>
+
+quizzes within a website. &nbsp;This is very
+
+<INPUT value="good" name=NA06 type=hidden><INPUT class=ipxa value="ANSWER" name=NB06 type=text size=15>
+
+for
+
+<INPUT value="instructors" name=NA07 type=hidden><INPUT class=ipxa value="ANSWER" name=NB07 type=text size=15>,
+
+who wish to
+
+<INPUT value="step" name=NA08 type=hidden><INPUT class=ipxa value="ANSWER" name=NB08 type=text size=15>
+
+into the
+
+<INPUT value="online" name=NA09 type=hidden><INPUT class=ipxa value="ANSWER" name=NB09 type=text size=15>
+<INPUT value="environment" name=NA10 type=hidden><INPUT class=ipxa value="ANSWER" name=NB10 type=text size=15>.
+
+
+<BR><BR>
+
+<INPUT value="CHECK ALL" name=check type=button onclick=scoreme()> <INPUT class=ipxx value name=ovrXX type=text size=28>
+</FORM>
+
+
+
+
+<br></font></body></html>
